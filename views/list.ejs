@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Page</title>
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+  <h1><%= list.name %></h1>
+  <form action="/addItem/<%= list.id %>" method="post">
+    <label for="listItem">List Item:</label>
+    <input type="text" id="listItem" name="listItem" required>
+    <button type="submit">Add Item</button>
+  </form>
+  <ol>
+    <% items.forEach(item => { %>
+      <li><%= item.item %></li>
+    <% }); %>
+  </ol>
+</body>
+</html>

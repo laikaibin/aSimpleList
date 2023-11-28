@@ -1,0 +1,17 @@
+text {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    width: 10%;
+}
+
+button {
+    margin: 20px;
+}
+
+ol {
+    list-style-position: inside;
+    padding-left: 0;
+  }
