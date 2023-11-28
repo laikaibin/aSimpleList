@@ -74,6 +74,6 @@ app.post('/addItem/:id', async (req, res) => {
     });
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000, function () {
   console.log(`Server is running on http://localhost:${port}`);
 });
