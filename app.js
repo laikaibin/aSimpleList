@@ -3,18 +3,20 @@ import pg from "pg";
 import bodyParser from "body-parser";
 import ejs from "ejs";
 
+import db from './data/database.js';
+
 const app = express();
 const port = 3000;
 
-const db = new pg.Client({
-  user: "postgres",
-  host: "localhost",
-  database: "database",
-  password: "admin123",
-  port: 5432,
-});
+// const db = new pg.Client({
+//   user: "postgres",
+//   host: "localhost",
+//   database: "database",
+//   password: "admin123",
+//   port: 5432,
+// });
 
-db.connect();
+//db.connect();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
